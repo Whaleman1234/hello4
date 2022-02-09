@@ -36,7 +36,7 @@
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 	};
-};*/
+};
 
 &spi1 {
 
@@ -59,7 +59,7 @@
 	chosen {
 		zmk,underglow = &led_strip;
 	};
-};
+};*/
 
 / {
         keymap {
