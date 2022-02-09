@@ -99,10 +99,10 @@
 // |VOLDN|CMUTE|PP   |BTCLR|RGBTG|RGBEF|   |OUTBLE|     |     |EPTOG|PGUP |PGDN |
 //                   | LALT| LWR | RAI |   | SHFT | SPC | BSPC|
                         bindings = <
-   &kp F1       &kp F2     &kp F3   &kp F4     &kp F5    &kp F6      &kp F7         &kp F8       &kp F9   &kp F10           &kp F11   &kp F12 
-   &kp C_VOL_UP &kp N1     &kp N2   &kp N3     &kp N4    &kp N5      &kp N6         &kp N7       &kp N8   &kp N9            &kp N0    &kp K_CMENU
-   &kp C_VOL_DN &kp C_MUTE &kp C_PP &bt BT_CLR &none     &none       &out OUT_BLE   &none        &none    &ext_power EP_TOG &kp PG_UP &kp PG_DN
-                    	            &kp LALT   &mo LOWER &mo RAISE   &kp LSHFT      &kp SPACE    &kp BSPC
+   &kp F1       &kp F2     &kp F3   &kp F4     &kp F5          &kp F6            &kp F7         &kp F8       &kp F9   &kp F10           &kp F11   &kp F12 
+   &kp C_VOL_UP &kp N1     &kp N2   &kp N3     &kp N4          &kp N5            &kp N6         &kp N7       &kp N8   &kp N9            &kp N0    &kp K_CMENU
+   &kp C_VOL_DN &kp C_MUTE &kp C_PP &bt BT_CLR &rgb_ug RGB_TOG &rgb_ug RGB_EFF   &out OUT_BLE   &none        &none    &ext_power EP_TOG &kp PG_UP &kp PG_DN
+                    	            &kp LALT   &mo LOWER       &mo RAISE         &kp LSHFT      &kp SPACE    &kp BSPC
                         >;
                 };
         };
