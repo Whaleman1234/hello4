@@ -78,12 +78,12 @@
                 RAISE {
 // -----------------------------------------------------------------------------------------
 // | F1  |  F2 |  F3 |  F4 |  F5 |  F6 |   |  F7  |  F8 |  F9 | F10 | F11 | F12 |
-// |VOLUP|  1  |  2  |  3  |  4  |  5  |   |  6   |  7  |  8  |  9  |  0  | GUI |
+// |VOLUP|  1  |  2  |  3  |  4  |  5  |   |  6   |  7  |  8  |  9  |  0  |LWIN |
 // |VOLDN|CMUTE|PP   |BTCLR|     |     |   |OUTBLE|     |     |EPTOG|PGUP |PGDN |
 //                   | LALT| LWR | RAI |   | SHFT | SPC | BSPC|
                         bindings = <
    &kp F1       &kp F2     &kp F3   &kp F4     &kp F5    &kp F6            &kp F7         &kp F8       &kp F9   &kp F10           &kp F11   &kp F12 
-   &kp C_VOL_UP &kp N1     &kp N2   &kp N3     &kp N4    &kp N5            &kp N6         &kp N7       &kp N8   &kp N9            &kp N0    &kp K_CMENU
+   &kp C_VOL_UP &kp N1     &kp N2   &kp N3     &kp N4    &kp N5            &kp N6         &kp N7       &kp N8   &kp N9            &kp N0    &kp LWIN
    &kp C_VOL_DN &kp C_MUTE &kp C_PP &bt BT_CLR &none     &none             &out OUT_BLE   &none        &none    &ext_power EP_TOG &kp PG_UP &kp PG_DN
                     	            &kp LALT &mo LOWER   &mt RAISE SPACE   &kp LSHFT      &kp SPACE    &kp BSPC
                         >;
