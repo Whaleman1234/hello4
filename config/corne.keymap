@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
  
-#define DEFAULT   0
-#define LOWER     1
-#define RAISE     2
-#define tri-layer 3
+#define DEFAULT  0
+#define LOWER    1
+#define RAISE    2
+#define THREE    3
 
 
 #include <behaviors.dtsi>
@@ -47,7 +47,15 @@
 	};
 };
 
-
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        THREE {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+};
 
 / {
         keymap {
@@ -94,7 +102,7 @@
                         >;
                 };
 		
-		tri-layer {
+		THREE {
 // -----------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |   |      |     |     |     |     |     |
 // |     |     |     |     |     |     |   |      |     |     |     |     |     |
@@ -109,4 +117,3 @@
                 };
         };
 };
-
