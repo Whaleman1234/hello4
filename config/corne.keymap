@@ -68,7 +68,7 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RET  |
 //                    | LALT| LWR | RAI |   | SHFT| SPC  | TAB |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E    &kp R     &kp T       &kp Y       &kp U     &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB   &mt LS(Q) Q &kp W &kp E    &kp R     &kp T       &kp Y       &kp U     &kp I     &kp O   &kp P    &kp BSPC
    &kp LSHFT &kp A &kp S &kp D    &kp F     &kp G       &kp H       &kp J     &kp K     &kp L   &kp SEMI &mt SQT RET
    &kp LCTRL &kp Z &kp X &kp C    &kp V     &kp B       &kp N       &kp M     &kp COMMA &kp DOT &kp FSLH &kp RET
                          &kp LSHIFT &mo LOWER &lt RAISE SPACE   &mt LSHFT SPACE  &kp SPACE &kp TAB
@@ -109,7 +109,7 @@
 // |     |     |     |     |     |      |   |      |     |     |     |EPTOG|     |
 //                   |     | LWR | RAI  |   |      |     |     |
                         bindings = <
-    &kp LC(LSHFT(ESC)) &none        &none      &none        &none        &kp K_PWR         &kp C_PWR    &none        &none        &none        &none             &kp LC(LA(DEL)) 
+    &kp LC(LS(ESC)) &none        &none      &none        &none        &kp K_PWR         &kp C_PWR    &none        &none        &none        &none             &kp LC(LA(DEL)) 
     &kp C_VOL_UP       &kp C_VOL_DN &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &kp C_PP          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_NXT        &bt BT_CLR
     &none              &none        &none      &none        &none        &none             &none        &none        &none        &none        &ext_power EP_TOG &none
                                                &none        &mo LOWER    &lt RAISE SPACE   &none        &none        &none
