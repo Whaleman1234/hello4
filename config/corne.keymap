@@ -68,10 +68,10 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RET  |
 //                    | LALT| LWR | RAI |   | SHFT| SPC  | TAB |
                         bindings = <
-   &kp TAB   &mt LS(Q) Q &kp W &kp E    &kp R     &kp T       &kp Y       &kp U     &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp S &kp D    &kp F     &kp G       &kp H       &kp J     &kp K     &kp L   &kp SEMI &mt SQT RET
-   &kp LCTRL &kp Z &kp X &kp C    &kp V     &kp B       &kp N       &kp M     &kp COMMA &kp DOT &kp FSLH &kp RET
-                         &kp LSHIFT &mo LOWER &lt RAISE SPACE   &mt LSHFT SPACE  &kp SPACE &kp TAB
+   &kp TAB   &mt LS(Q) &mt LS(W) &mt LS(E)  &mt LS(R) &mt LS(T)         &mt LS(Y)       &mt LS(U) &mt LS(I) &mt LS(O) &mt LS(P) &kp BSPC
+   &kp LSHFT &mt LS(A) &mt LS(S) &mt LS(D)  &mt LS(F) &mt LS(G)         &mt LS(H)       &mt LS(J) &mt LS(K) &mt LS(L) &kp SEMI  &mt SQT RET
+   &kp LCTRL &mt LS(Z) &mt LS(X) &mt LS(C)  &mt LS(V) &mt LS(B)         &mt LS(N)       &mt LS(M) &kp COMMA &kp DOT   &kp FSLH  &kp RET
+                                 &kp LSHIFT &mo LOWER &lt RAISE SPACE   &mt LSHFT SPACE &kp SPACE &kp TAB
                         >;
                 };
                 LOWER {
