@@ -68,10 +68,10 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RET  |
 //                    | LALT| LWR | RAI |   | SHFT| SPC  | TAB |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E    &kp R     &kp T       &kp Y       &kp U     &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp S &kp D    &kp F     &kp G       &kp H       &kp J     &kp K     &kp L   &kp SEMI &mt SQT RET
-   &kp LCTRL &kp Z &kp X &kp C    &kp V     &kp B       &kp N       &kp M     &kp COMMA &kp DOT &kp FSLH &kp RET
-                                  &kp LSHIFT &mo LOWER &lt RAISE SPACE   &mt LSHFT SPACE  &kp SPACE &kp TAB
+   &kp TAB   &kp Q &kp W &kp E &kp R      &kp T     &kp Y      &kp U           &kp I           &kp O   &kp P    &kp BSPC
+   &kp LSHFT &kp A &kp S &kp D &kp F      &kp G     &kp H      &kp J           &kp K           &kp L   &kp SEMI &mt SQT RET
+   &kp LCTRL &kp Z &kp X &kp C &kp V      &kp B     &kp N      &kp M           &kp COMMA       &kp DOT &kp FSLH &kp RET
+                               &kp LSHIFT &mo LOWER &kp SPACE  &mt LSHFT SPACE &lt RAISE SPACE &kp TAB
                         >;
                 };
                 LOWER {
@@ -81,10 +81,10 @@
 // | CTRL |  "  |  +  |LC(C)|LC(V)|BTNXT|   | "|" |  /  |  =  |  ?  | LEFT|RIGHT|
 //                    | LALT| LWR | RAI |   | SHFT| SPC | RET |
                         bindings = <
-   &kp ESC   &kp EXCL &kp AT   &kp POUND   &kp DLLR  &kp PRCNT         &kp CARET &kp AMPS  &kp STAR    &kp BSPC  &kp DEL  &kp UP
-   &kp CAPS  &kp LBRC &kp LBKT &kp LPAR    &kp MINUS &kp GRAVE         &kp BSLH  &kp UNDER &kp RPAR &kp RBKT  &kp RBRC &kp DOWN
-   &kp LCTRL &kp DQT  &kp PLUS &kp LC(C)   &kp LC(V) &bt BT_NXT        &kp PIPE  &kp FSLH  &kp EQUAL   &kp QMARK &kp LEFT &kp RIGHT
-                               &kp LALT    &mo LOWER &lt RAISE SPACE   &kp LSHFT &kp SPACE &kp RET
+   &kp ESC   &kp EXCL &kp AT   &kp POUND   &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS  &kp STAR    &kp BSPC  &kp DEL  &kp UP
+   &kp CAPS  &kp LBRC &kp LBKT &kp LPAR    &kp MINUS &kp GRAVE    &kp BSLH  &kp UNDER &kp RPAR &kp RBKT  &kp RBRC &kp DOWN
+   &kp LCTRL &kp DQT  &kp PLUS &kp LC(C)   &kp LC(V) &bt BT_NXT   &kp PIPE  &kp FSLH  &kp EQUAL   &kp QMARK &kp LEFT &kp RIGHT
+                               &kp LALT    &mo LOWER &kp SPACE    &mt LSHFT SPACE &lt RAISE SPACE &kp RET
                         >;
                 };
 
@@ -95,10 +95,10 @@
 // |     |     |     |     |     |     |   |      |     |     |     |PGUP |PGDN |
 //                   | LALT| LWR | RAI |   | SHFT | SPC | BSPC|
                         bindings = <
-   &kp F1       &kp F2     &kp F3   &kp F4     &kp F5    &kp F6            &kp F7         &kp F8       &kp F9   &kp F10           &kp F11   &kp F12 
-   &none &kp N1     &kp N2   &kp N3     &kp N4    &kp N5            &kp N6         &kp N7       &kp N8   &kp N9            &kp N0    &kp LWIN
-   &none &none &kp C_PP &none &none     &none             &none   &none        &none    &none &kp PG_UP &kp PG_DN
-                    	            &kp LALT &mo LOWER   &lt RAISE SPACE   &kp LSHFT      &kp SPACE    &kp BSPC
+   &kp F1 &kp F2 &kp F3   &kp F4   &kp F5    &kp F6            &kp F7    &kp F8    &kp F9   &kp F10 &kp F11   &kp F12 
+   &none  &kp N1 &kp N2   &kp N3   &kp N4    &kp N5            &kp N6    &kp N7    &kp N8   &kp N9  &kp N0    &kp LWIN
+   &none  &none  &kp C_PP &none    &none     &none             &none     &none     &none    &none   &kp PG_UP &kp PG_DN
+                    	  &kp LALT    &mo LOWER &kp SPACE   &mt LSHFT SPACE &lt RAISE SPACE &kp BSPC
                         >;
                 };
 		
@@ -109,10 +109,10 @@
 // |     |     |     |     |     |      |   |      |     |     |     |EPTOG|     |
 //                   |     | LWR | RAI  |   |      |     |     |
                         bindings = <
-    &kp LC(LS(ESC)) &none        &none      &none        &none        &kp K_PWR         &kp C_PWR    &none        &none        &none        &none             &kp LC(LA(DEL)) 
-    &kp C_VOL_UP       &kp C_VOL_DN &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &kp C_PP          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_NXT        &bt BT_CLR
-    &none              &none        &none      &none        &none        &none             &none        &none        &none        &none        &ext_power EP_TOG &none
-                                               &none        &mo LOWER    &lt RAISE SPACE   &none        &none        &none
+    &kp LC(LS(ESC)) &none        &none      &none        &none        &kp K_PWR          &kp C_PWR    &none        &none        &none        &none             &kp LC(LA(DEL)) 
+    &kp C_VOL_UP    &kp C_VOL_DN &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &kp C_PP           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_NXT        &bt BT_CLR
+    &none           &none        &none      &none        &none        &none              &none        &none        &none        &none        &ext_power EP_TOG &none
+                                            &none        &mo LOWER    &lt RAISE SPACE    &none        &none        &none
                         >;
                 };
         };
