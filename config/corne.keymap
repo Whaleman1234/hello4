@@ -63,7 +63,7 @@
 			compatible = "zmk,behavior-caps-word";
 			label = "CAPS_WORD";
 			#binding-cells = <0>;
-			continue-list != <SPACE>;
+			continue-list ! <SPACE>;
 		};
 	};
 };
