@@ -125,7 +125,7 @@
                         bindings = <
     &kp LC(LS(ESC)) &none        &none      &none        &none        &kp K_PWR          &kp C_PWR    &none        &none        &none        &none             &kp LC(LA(DEL)) 
     &kp C_VOL_UP    &kp C_VOL_DN &kp C_MUTE &kp C_BRI_UP &kp C_BRI_DN &kp C_PP           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_NXT        &bt BT_CLR
-    &none           &none        &none      &none        &none        &none              &rgb_ug RGB_TOG        &&rgb_ug RGB_EFF &none        &none        &ext_power EP_TOG &none
+    &none           &none        &none      &none        &none        &none              &rgb_ug RGB_TOG        &rgb_ug RGB_EFF &none        &none        &ext_power EP_TOG &none
                                             &none        &mo LOWER    &lt RAISE SPACE    &none        &none        &none
                         >;
                 };
